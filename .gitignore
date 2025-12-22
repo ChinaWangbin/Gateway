@@ -1,0 +1,96 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+logs/
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Mobile Tools for Java
+.mtj.tmp/
+
+# Virtual machine crash logs
+hs_err_pid*
+core
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE - IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+*.launch
+
+# IDE - VS Code
+.vscode/
+
+# IDE - NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+
+# Build directories
+target/
+build/
+.gradle/
+
+# Maven Wrapper (只忽略 properties，保留 jar 以便别人能用 mvnw)
+.mvn/wrapper/maven-wrapper.properties
+!.mvn/wrapper/maven-wrapper.jar
+
+# Maven other
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Gradle Wrapper (可选，如果你用 Gradle)
+gradle/
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+
+# Node.js (如果你前端混在一起)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Spring Boot specific (可选保留 HELP.md)
+# HELP.md
+
+# Temporary / backup files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Other
+*.hprof
