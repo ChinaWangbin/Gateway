@@ -17,12 +17,12 @@ spring:
         #  - Path=/hello
         #filters:
         #  - SetPath=/actuator/health
-        - id: model1_route
-          uri: http://localhost:8082
-          predicates:
-            - Path=/model1/**
-          filters:
-            - StripPrefix=1
+#        - id: model1_route
+#          uri: http://localhost:8082
+#          predicates:
+#            - Path=/model1/**
+#          filters:
+#            - StripPrefix=1
       # 启用详细的路由匹配日志
       httpclient:
         wiretap: true
