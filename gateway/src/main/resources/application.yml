@@ -5,12 +5,12 @@ spring:
     gateway:
       routes:
         # 静态路由配置（可选，可以全部通过Nacos管理）
-        - id: local_hello_route
-          uri: http://localhost:${server.port}
-          predicates:
-            - Path=/local/**
-          filters:
-            - RewritePath=/local/(?<segment>.*), /api/${segment}
+#        - id: local_hello_route
+#          uri: http://localhost:${server.port}
+#          predicates:
+#            - Path=/local/**
+#          filters:
+#            - RewritePath=/local/(?<segment>.*), /api/${segment}
         #- id: hello_route
         #  uri: http://localhost:${server.port}
         # predicates:
