@@ -1,9 +1,28 @@
 package com.example.gateway.test;
 import reactor.core.publisher.Mono;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.regex.Pattern;
 
 public class ReactorDemo {
     public static void main(String[] args) {
+        test2();
+    }
+
+    public static  void  test2(){
+        Mono<String> mono1 = Mono.justOrEmpty("Hello");
+        Mono<String> mono2 = Mono.justOrEmpty(null); // 返回 Mono.empty()
+
+        mono1.subscribe(   value -> System.out.println(value),
+                error -> System.err.println(error)); // 输出: Hello
+        mono2.subscribe(
+                value -> System.out.println(value),  // 不会执行
+                error -> System.err.println(error),  // 不会执行
+                () -> System.out.println("Completed") // 输出: Completed
+        );
+    }
+    public static void test1(){
         // 模拟输入：尝试把 token 改成 "user" 看看效果
         String token = "admin";
 
