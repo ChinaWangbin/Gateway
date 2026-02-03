@@ -42,7 +42,9 @@ out/
 .project
 .settings/
 *.launch
-
+.arts
+.jlsp
+.vscode
 # IDE - VS Code
 .vscode/
 
