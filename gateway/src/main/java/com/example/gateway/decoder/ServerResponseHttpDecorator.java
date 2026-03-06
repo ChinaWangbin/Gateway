@@ -26,4 +26,11 @@ public class ServerResponseHttpDecorator extends ServerHttpResponseDecorator {
        // return super.writeWith(new ServerResponseBodyDecorator(body, exchange));
        return SpringContextUtil.getBean(ServerResponseHttpDecoratorImpl.class).writeWith(exchange, this, body);
     }
+
+
+    @Override
+    public Mono<Void> writeAndFlushWith(Publisher<? extends Publisher<? extends DataBuffer>> body) {
+        return SpringContextUtil.getBean(ServerResponseHttpDecoratorImpl.class).writeAndFlushWith(exchange, this, body);
+    }
+
 }

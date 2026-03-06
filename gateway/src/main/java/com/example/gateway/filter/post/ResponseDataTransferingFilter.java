@@ -5,6 +5,7 @@ import com.example.gateway.dto.SensitiveDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
+import org.springframework.cloud.gateway.filter.NettyWriteResponseFilter;
 import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
@@ -27,7 +28,7 @@ public class ResponseDataTransferingFilter implements Ordered, GlobalFilter {
 
     @Override
     public int getOrder() {
-        return 0;
+        return NettyWriteResponseFilter.WRITE_RESPONSE_FILTER_ORDER - 1;
     }
 
 
